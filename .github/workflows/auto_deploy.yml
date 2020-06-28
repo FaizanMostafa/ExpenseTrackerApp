@@ -29,6 +29,9 @@ jobs:
         node-version: 12
 
     # Runs a set of commands using the runners shell
+    - name: Installing Node Modules
+      run: npm i
+    
     - name: Building React App
       run: npm run build
     
